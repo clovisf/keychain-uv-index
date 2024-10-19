@@ -1970,6 +1970,12 @@
 		(uuid "458a7c43-3c42-4030-8e87-96d494d5b0a4")
 	)
 	(junction
+		(at 76.2 129.54)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "705e8d9a-c191-470c-bc47-2d9bbd324d74")
+	)
+	(junction
 		(at 76.2 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3201,7 +3207,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 		(property "Value" "LED"
@@ -3211,7 +3216,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
@@ -3887,6 +3891,72 @@
 			(project "keychain-thermometer"
 				(path "/a2c868d4-674e-4d2b-b018-a84b32386aa1"
 					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 76.2 129.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ec583a67-4f5e-414c-b39c-4c4775fd5cce")
+		(property "Reference" "#PWR09"
+			(at 76.2 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 76.2 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 76.2 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 76.2 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 76.2 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6a7dddbc-f2b3-4e95-83f5-517569471aeb")
+		)
+		(instances
+			(project "keychain-uv-index"
+				(path "/a2c868d4-674e-4d2b-b018-a84b32386aa1"
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
